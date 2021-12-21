@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./Survey.css" media="screen" />
+        <title>Survey form</title>
+    </head>
+    <body>
+        <div class="b">
+        <h1 id="title">Browser Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </div>
+        <form id="survey-form" >
+            <label  id="name-label" for="name">Name</label>
+            <br>
+                <input class="a" id="name" type="text" name="name" placeholder="Enter your name here" required></input>
+                <br>
+                <br>
+            <label  id="email-label" for="email">Email</label>
+            <br>
+                <input class="a" id="email" type="text" name="email" placeholder="Enter your email here" required></input>
+                <br>
+                <br>
+            <label  id="number-label" for="number">Age</label>
+            <br>
+                <input class="a" id="number" type="number" name="number" placeholder="Enter your age" min="1" max="150" required></input>
+                <br>
+                <br>
+            <label id="dropdown-label" for="dropdown">Which option best describes your current role?</label>
+                <br>
+                <select id="dropdown" >
+                    <option value="Student">Student</option>
+                    <option value="Teacher">Teacher</option>
+                    <option value="Employee">Employee</option>
+                    <option value="Part-time-job-holder">Part-time-job-holder</option>
+                    <option value="None of the above">None of the above</option>
+                </select>
+                <br>
+                <br>
+            <label id="radio-label" for="radio">Would you recommend this Browser to a friend?</label>
+                <br>
+                <input id="radio" type="radio" name="recommend" value="Definitely">
+            <label for="radio">Definitely</label>
+                <br>
+                <input id="radio" type="radio" name="recommend" value="Maybe">
+            <label for="radio">Maybe</label>
+                <br>
+                <input id="radio" type="radio" name="recommend" value="Not sure">
+            <label for="radio">Not sure</label>
+                <br>
+                <br>
+            <label for="check" id="checkbox-label">What is your favorite color?</label>
+                <br>
+                <input id="check" type="checkbox" name="color" value="Red">
+            <label for="check">Red</label>
+                <br>
+                <input id="check" type="checkbox" name="color" value="Green">
+            <label for="check">Green</label>
+                <br>
+                <input id="check" type="checkbox" name="color" value="Blue">
+            <label for="check">Blue</label>
+                <br>
+                <input id="check" type="checkbox" name="color" value="Black">
+            <label for="check">Black</label>
+                <br>
+                <input id="check" type="checkbox" name="color" value="Yellow">
+            <label for="check">Yellow</label>
+                <br>
+                <br>
+            <label for="textarea" id="textarea-label">Any comments or suggestions?</label>
+                <br>
+                <br>
+                <textarea id="textarea" name="instructions" rows="8" cols="50" placeholder="Enter your comments here..."></textarea>
+                <br>
+                <br>
+                <input id="submit" type="submit" value="SUBMIT">
+        </form>
+    </body>
+</html>
